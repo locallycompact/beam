@@ -78,7 +78,7 @@ library
   default-extensions:  ScopedTypeVariables, OverloadedStrings, GADTs, RecursiveDo, FlexibleInstances, FlexibleContexts, TypeFamilies,
                        GeneralizedNewtypeDeriving, RankNTypes, TupleSections, ConstraintKinds, StandaloneDeriving, TypeOperators,
                        DefaultSignatures, KindSignatures, MultiParamTypeClasses, DeriveGeneric, DeriveFunctor, DeriveDataTypeable,
-                       TypeApplications, FunctionalDependencies, DataKinds, BangPatterns, InstanceSigs
+                       TypeApplications, FunctionalDependencies, DataKinds, BangPatterns, InstanceSigs, TypeFamilyDependencies
   ghc-options:         -Wall -O3
   if impl(ghc >= 8.8)
     ghc-options: -Wcompat
@@ -99,7 +99,7 @@ test-suite beam-core-tests
   default-language: Haskell2010
   default-extensions: OverloadedStrings, FlexibleInstances, FlexibleContexts, GADTs, TypeFamilies,
                       DeriveGeneric, DefaultSignatures, RankNTypes, StandaloneDeriving, KindSignatures,
-                      TypeApplications, ScopedTypeVariables, MultiParamTypeClasses
+                      TypeApplications, TypeScopedTypeVariables, MultiParamTypeClasses
 
 source-repository head
   type: git
